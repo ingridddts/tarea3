@@ -24,7 +24,7 @@ class Comprador{
         //excepcion de la compra
         try{
             //si la compra es realizada, se muestran los datos
-            varProducto = exp.comprarProducto(moneda, tipoProducto,cualProducto);
+            varProducto = exp.comprarProducto(moneda, tipoProducto, cualProducto);
             sabor = varProducto.sabor();
             System.out.println("Compra realizada");
          // de lo contrario se muestra null porque no se realizó la compra

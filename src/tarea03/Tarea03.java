@@ -5,15 +5,17 @@ public class Tarea03 {
 
     public static void main(String[] args) {
         // TODO code application logic here
-        Expendedor exp = new Expendedor(2,500);
+        Expendedor exp = new Expendedor(4);
+        Expendedor exp1 = new Expendedor(3);
         Moneda moneda1 = new Moneda1000();
         Moneda moneda2 = new Moneda100();
         Moneda moneda3 = new Moneda500();
-        CocaCola cc = new CocaCola(2);
-        Sprite sp = new Sprite(2);
-        //Fanta f = new Fanta(3);
-        
-        System.out.println("Valor de la Bebidas y dulces: $" + exp.getPrecioBebida() + "\n");
+        Moneda moneda4 = new Moneda500();
+        System.out.println("Valor de las Bebidas y dulces: $");
+        System.out.println("Valor de una cocacola $" + exp.queprecio(precioProducto.cocacola));
+        System.out.println("Valor de una sprite $" + exp.queprecio(precioProducto.sprite));
+        System.out.println("Valor de un snickers $" + exp.queprecio(precioProducto.snickers));
+        System.out.println("Valor de un super8 $" + exp.queprecio(precioProducto.super8)+ "\n");
         //System.out.println("-----Compra-----");
         //simular compra compradorUno
         Comprador compradorUno = new Comprador(moneda1, 1, 1, exp);
@@ -32,7 +34,7 @@ public class Tarea03 {
         System.out.println();
         
         //comprador 3
-        Comprador compradorTres = new Comprador(moneda3,1, 2, exp);
+        Comprador compradorTres = new Comprador(moneda3, 1, 2, exp1);
         //System.out.println("-----Compra 3-----");
         System.out.println("Moneda: " + moneda3.getValor());
         System.out.println("Sabor: " + compradorTres.queCompraste());
@@ -41,14 +43,15 @@ public class Tarea03 {
         
         //probar dulces
         //compra 4
-        Comprador compradorCuatro = new Comprador(moneda1, 2, 1, exp);
-        System.out.println("Moneda: " + moneda1.getValor());
+        System.out.println("compra dulce");
+        Comprador compradorCuatro = new Comprador(moneda4, 2, 1, exp1);
+        System.out.println("Moneda: " + moneda4.getValor());
         System.out.println("Sabor: " + compradorCuatro.queCompraste());
         System.out.println("Vuelto: " + compradorCuatro.cuantoVuelto());
         System.out.println();
         
         //compra 5
-        Comprador compradorCinco = new Comprador(moneda3, 2, 2, exp);
+        Comprador compradorCinco = new Comprador(moneda3, 2, 2, exp1);
         System.out.println("Moneda: " + moneda3.getValor());
         System.out.println("Sabor: " + compradorCinco.queCompraste());
         System.out.println("Vuelto: " + compradorCinco.cuantoVuelto());

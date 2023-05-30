@@ -1,6 +1,6 @@
 package tarea03;
 /**
- * esta clase abstracta hereda de la clase producto y almacena atributos del producto ofrecido
+ * clase abstracta que hereda de la clase producto y almacena atributos del producto ofrecido
  * @param serie: número de serie del dulce
  */
 

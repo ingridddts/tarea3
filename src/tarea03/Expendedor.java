@@ -115,7 +115,7 @@ class Expendedor{
                     switch(cual){
                         case 1: //si compra un snickers
                             int preciosn = queprecio(precioProducto.snickers);
-                            if(moneda.getValor() >= precio){
+                            if(moneda.getValor() >= preciosn){
                                 dulce = snickers.getDulce();
                                 if(dulce != null){ //si hay stock
                                     //calcularVuelto

@@ -13,7 +13,6 @@ class Comprador{
      */
     public Comprador(Moneda moneda, int tipoProducto, int cualProducto, Expendedor exp){
         this.monedavuelto=0;
-        //Bebida a = exp.comprarBebida(moneda, cualBebida);
         Producto varProducto;
 
         //excepcion de la compra

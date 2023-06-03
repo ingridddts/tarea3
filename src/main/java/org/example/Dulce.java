@@ -14,14 +14,14 @@ abstract class Dulce extends Producto{
     }
 
     /**
-     * @return devuelve el número de serie del producto
+     * @return número de serie del producto
      */
     @Override
     public int getSerie(){
         return serie;
     }
     /**
-     * @return devuelve el sabor del dulce
+     * @return sabor del dulce
      */
     @Override
     public abstract String sabor();

@@ -17,25 +17,6 @@ class Expendedor{
         super8 = new Deposito();
         dv = new DepositoVuelto();
 
-        /**
-         precioProducto preciococa = precioProducto.
-         precioProducto preciosp = preciosp.preciosprite;
-         precioProducto preciosnic = preciosnic.preciosnickers;
-         precioProducto precios8 = precios8.preciosuper8;
-         **/
-        /**
-        //Rellenar máquina con bebidas y dulces
-        for (int i = 0; i < numProducto; i++) {
-            CocaCola a= new CocaCola(100+i);
-            coca.addBebida(a);
-            Sprite b = new Sprite(200+i);
-            sprite.addBebida(b);
-            Snickers s = new Snickers(300+i);
-            snickers.addDulce(s);
-            Super8 sup = new Super8(400+i);
-            super8.addDulce(sup);
-        }
-         **/
         rellenarexp(5);
     }
 
@@ -53,7 +34,6 @@ class Expendedor{
     }
 
     public Producto comprarProducto(Moneda moneda, int tipo, int cual) throws PagoIncorrectoException, NoHayProductoException, PagoInsuficienteException{
-
         switch(tipo){
             case 1: //si es tipo bebida entra a este switch
                 Bebida bebida = null;
@@ -185,9 +165,11 @@ class Expendedor{
     public int getPrecioDulce(){
         return this.precio;
     }
-
+    
+    /**
+    * se establece un precio para cada producto(distinto)
+    */
     public int queprecio(precioProducto precioProd){
-        //precioProd = precioProducto.cocacola;
         switch(precioProd){
             case cocacola:
                 return precio = 900;

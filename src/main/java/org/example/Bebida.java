@@ -1,6 +1,10 @@
 package org.example;
 
-//clase Bebida que hereda de clase producto.
+/**
+* clase Bebida que hereda de clase producto.
+* @param serie indica el numero de serie identificador de la bebida
+*/
+
 abstract class Bebida extends Producto{
     private int serie; //codigo bebida
 
@@ -9,11 +13,15 @@ abstract class Bebida extends Producto{
         super(serie);
     }
 
-    //obtiene/retorna el número de serie de la bebida
+    /**
+    * @return número de serie de la bebida
+    */
     public int getSerie(){
         return serie;
     }
 
-    //obtiene/retorna el sabor de la bebida
+    /**
+    * @return sabor de la bebida 
+    */
     public abstract String sabor();
 }

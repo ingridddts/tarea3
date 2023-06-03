@@ -18,13 +18,14 @@ class Deposito{
         deposito = new ArrayList<Bebida>();
         deposito1 = new ArrayList<Dulce>();
     }
-
-    //agrega una bebida al arraylist de bebidas
+    
+    /**
+    * addBebida y addDulce agregan una bebida al arraylist de bebidas y dulces, respectivamente
+    */
     public void addBebida(Bebida bebida){
         deposito.add(bebida);
     }
 
-    //agrega un dulce al arraylist de dulces
     public void addDulce(Dulce dulce){
         deposito1.add(dulce);
     }

@@ -20,7 +20,6 @@ public class Main {
 
         //simular compra compradorUno
         Comprador compradorUno = new Comprador(moneda1, 1, 1, exp);
-        //System.out.println("-----Compra 1-----");
         System.out.println("Moneda: " + moneda1.getValor());
         System.out.println("Sabor: " + compradorUno.queCompraste());
         System.out.println("Vuelto: " + compradorUno.cuantoVuelto());
@@ -28,7 +27,6 @@ public class Main {
 
         //simular compra compradorUno
         Comprador compradorccd = new Comprador(moneda1, 1, 1, exp);
-        //System.out.println("-----Compra 1-----");
         System.out.println("Moneda: " + moneda1.getValor());
         System.out.println("Sabor: " + compradorUno.queCompraste());
         System.out.println("Vuelto: " + compradorUno.cuantoVuelto());
@@ -36,14 +34,12 @@ public class Main {
 
         //simular compra compradorUno
         Comprador compradorcct = new Comprador(moneda1, 1, 1, exp);
-        //System.out.println("-----Compra 1-----");
         System.out.println("Moneda: " + moneda1.getValor());
         System.out.println("Sabor: " + compradorUno.queCompraste());
         System.out.println("Vuelto: " + compradorUno.cuantoVuelto());
         System.out.println();
 
         Comprador compradorccq = new Comprador(moneda1,1, 1, exp);
-        //System.out.println("-----Compra 1-----");
         System.out.println("Moneda: " + moneda1.getValor());
         System.out.println("Sabor: " + compradorUno.queCompraste());
         System.out.println("Vuelto: " + compradorUno.cuantoVuelto());
